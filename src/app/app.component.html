@@ -1,0 +1,113 @@
+
+
+<section class="fondo">
+  <!-- BARRA DE NAVEGACION -->
+<div>
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong border-bottom py-3 fs-5 barra ">
+          <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto pe-3">
+                <li class="nav-item pe-3 ">
+                  <a class="nav-link active text-dark ms-auto botones border-start" aria-current="page" href="https://www.linkedin.com/in/agustin-lazarte-573b16184/" target="_BLANK">Linkedin</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link text-dark ms-auto botones border-start " href="https://github.com/agustinml" target="_BLANK">Github</a>
+                </li>
+                <li class="nav-item pe-3">
+                  <a class="nav-link text-dark ms-auto botones border-start border-end" href="https://www.instagram.com/_agustinlazarte/" target="_BLANK">Instagram</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </nav>
+</div>
+<!-- AREA INFORMACION -->
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-md-5 text-center fuente">
+      <h3 class="fs-1 animate__animated animate__slideInLeft">Agustín Lazarte</h3>
+      <h4 class="fs-3 animate__animated animate__slideInLeft mt-4">Programador WEB</h4>
+      <p class="fs-4 lh-lg animate__animated animate__fadeInDown">Hola, me llamo Agustín Lazarte.  Soy un apasionado por la programación web orientado a frontend, me desenvuelvo bien en cualquier entorno. Se manejarme en metodologías de trabajo ágil y en cascada. No dudes en contactarme! </p>
+
+      <!-- ACA EMPIEZA EL FORMULARIO -->
+      <form class="animate__animated animate__slideInUp" [formGroup]="formularioDeContacto" (ngSubmit)="alEnviarMensaje()">
+
+            <mat-form-field appearance="fill">
+              <mat-label class="text-success" >Nombre</mat-label>
+              <input matInput type="text" formControlName="nombre">
+            </mat-form-field>
+            <br>
+
+            <mat-form-field appearance="fill">
+              <mat-label class="text-success">Mensaje</mat-label>
+              <input class="form-control-lg" matInput type="text" formControlName="mensaje">
+            </mat-form-field>
+
+        <br>
+            <button mat-raised-button type="submit" class="bg-light">Enviar Mensaje Whatsapp</button>
+
+      </form>
+
+
+    </div>
+
+    <div class="col-md-7 boxhabilidades animate__animated animate__slideInRight">
+      <div class="card bg-transparent ">
+        <div class="card-body">
+          <h3 class="card-title fs-3 text-center">Habilidades</h3>
+
+            <ul class="list-group list-group-flush fs-5 ">
+              <li class="list-group-item bg-transparent text-primary fw-bold">JavaScript <i class="bi bi-check2-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg></i></li>
+              <li class="list-group-item bg-transparent text-primary fw-bold">HTML <i class="bi bi-check2-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg></i></li>
+              <li class="list-group-item bg-transparent text-primary fw-bold">CSS<i class="bi bi-check2-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg></i></li>
+              <li class="list-group-item bg-transparent text-primary fw-bold">Angular<i class="bi bi-check2-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg></i></li>
+              <li class="list-group-item bg-transparent text-primary fw-bold">Material<i class="bi bi-check2-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg></i></li>
+              <li class="list-group-item bg-transparent text-primary fw-bold">Bootstrap<i class="bi bi-check2-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg></i></li>
+              <li class="list-group-item bg-transparent text-primary fw-bold">Github<i class="bi bi-check2-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg></i></li>
+              <li class="list-group-item bg-transparent text-primary fw-bold">PHP<i class="bi bi-check2-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg></i></li>
+              <li class="list-group-item bg-transparent text-primary fw-bold">MySQL<i class="bi bi-check2-circle"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16">
+                <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z"/>
+                <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z"/>
+              </svg></i></li>
+            </ul>
+
+        </div>
+      </div>
+  </div>
+  </div>
+
+</div>
+
+
+</section>
+<router-outlet></router-outlet>
+
